@@ -13,7 +13,8 @@ function toggleNav() {
 
 // for the random quote in the header
 var txtFile = new XMLHttpRequest();
-txtFile.open("GET",site.baseurl + "/quotes.txt", true);
+
+txtFile.open("GET", "/blog/quotes.txt", true);
 txtFile.onreadystatechange = function () {
     if (txtFile.readyState === 4) {
         if (txtFile.status === 200) {
