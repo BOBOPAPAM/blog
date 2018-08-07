@@ -13,4 +13,6 @@ layout: default
     <!-- google ads code box -->
 <!--</div>-->
 
-{% include JB/comments %}
+{% if site.intensedebate_comments %}
+{% include intensedebate-comments.html %}
+{% endif %}
