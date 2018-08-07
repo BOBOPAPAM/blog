@@ -59,7 +59,7 @@
         <a href="/tags" class="nav-item">Tags</a>
       </div>
 
-      <span class="nav-toggle" id="nav-toggle">
+      <span class="nav-toggle" id="nav-toggle"></span>
           <span></span>
           <span></span>
           <span></span>
@@ -87,7 +87,7 @@
                 <div class="content nice-text">
                   <ul>
                   {% for post in site.posts limit:3 %}
-                  <li><a href="{{ site.baseurl + post.url }}">
+                  <li><a href="{{site.baseurl}}{{  post.url }}">
                     {{ post.title }}
                   </a></li>
                   {% endfor %}
